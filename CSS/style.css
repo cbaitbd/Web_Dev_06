@@ -1,0 +1,27 @@
+
+ /* h1{
+    background-color: yellow;
+    color: green;
+} */
+
+*{
+    font-size: 14px;
+}
+
+body{
+    /* background-color: red; */
+}
+
+.bg-red{
+    background-color: #870f6980;
+}
+
+#big{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.font-40{
+    font-size: 40px;
+}
+
