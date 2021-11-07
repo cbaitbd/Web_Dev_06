@@ -3,13 +3,13 @@
     background-color: yellow;
     color: green;
 } */
-
+/* 
 *{
     font-size: 14px;
 }
 
 body{
-    /* background-color: red; */
+    /* background-color: red; 
 }
 
 .bg-red{
@@ -23,5 +23,19 @@ body{
 
 .font-40{
     font-size: 40px;
-}
+} */
 
+body{
+    background-image: linear-gradient(to top left ,black, red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+/* 
+div{
+    background-image: url('./bg_image.jpg');
+    /* height: 120px; 
+} 
+
+*/
