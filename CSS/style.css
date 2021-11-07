@@ -1,4 +1,9 @@
 
+ *{
+     padding: 0;
+     margin: 0;
+ }
+
  /* h1{
     background-color: yellow;
     color: green;
@@ -24,14 +29,14 @@ body{
 .font-40{
     font-size: 40px;
 } */
-
+/* 
 body{
     background-image: linear-gradient(to top left ,black, red);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: contain;
-}
+} */
 /* 
 div{
     background-image: url('./bg_image.jpg');
@@ -39,3 +44,46 @@ div{
 } 
 
 */
+
+.box{
+
+    /* background-color: magenta; */
+    width: 300px;
+    height: 300px;
+    border-width: 50px;
+    border-style: inset;
+    border-color: red;
+    border-radius: 50%;
+}
+
+/* .box-2{
+    background-color: green;
+    width: 50%;
+    height: 50%;
+} */
+
+button{
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: skyblue;
+    border-color: green;
+    border-width: 10px;
+    border-style: outset;
+    box-shadow: 5px -5px 0px black;
+}
+
+button:focus{
+    border-style: inset;
+    background-color: rgb(76, 169, 206);
+    color: #eee;
+}
+
+.parent{
+    width: 300px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.child{
+    width: 500px;
+}
