@@ -61,7 +61,7 @@ div{
     width: 50%;
     height: 50%;
 } */
-
+/* 
 button{
     padding: 20px;
     text-transform: uppercase;
@@ -86,4 +86,46 @@ button:focus{
 
 .child{
     width: 500px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('./fonts/Lobster/Lobster-Regular.ttf');
+@import url('./fonts/hack/Hack-Regular.ttf');
+
+h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
+
+h2{
+    font-family: Hack;
+}
+
+.link-btn{
+    text-decoration: none;
+    font-size: 25px;
+    border:10px solid red;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
+    color: #fff;
+    background-color: seagreen;
+    transition: 1s;
+}
+
+.link-btn:hover{
+    border:10px solid seagreen;
+    background-color: red;
+}
+
+.link-btn:focus{
+    border:10px solid seagreen;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.link-btn:nth-child(3){
+    color: black;
+}
+
+
+
