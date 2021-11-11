@@ -86,7 +86,7 @@ button:focus{
 
 .child{
     width: 500px;
-} */
+} 
 
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('./fonts/Lobster/Lobster-Regular.ttf');
@@ -127,5 +127,41 @@ h2{
     color: black;
 }
 
+div{
+    display: inline;
+}
 
+span{
+    display: block;
+} 
+
+.dis-none{
+    visibility: hidden;
+}
+
+*/
+
+.parent{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    position: relative;
+}
+
+
+.myDiv{
+    height: 200px;
+    width: 200px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+body{
+    height: 1000px;
+}
 
