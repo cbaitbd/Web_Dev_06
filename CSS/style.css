@@ -166,7 +166,7 @@ body{
 }
 
 */
-
+/* 
 
 .outer{
     background-color: blue;
@@ -186,9 +186,9 @@ body{
     float: right;
 }
 
-/* p{
+ p{
     clear: both;
-} */
+} 
 
 img:nth-child(1){
     float: right;
@@ -215,4 +215,65 @@ h1{
     font-size: 80px;
     color: transparent;
     text-shadow: 2px 50px 10px black;
+} 
+
+
+.parent{
+    background-color: seagreen;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 95vh;
+}
+
+.child{
+    background-color: #eee;
+    height: 200px;
+    width: 300px;
+    margin: 2px;
+    font-size: 40px;
+}
+
+*/
+
+/* .parent{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent > h1{
+    font-size: 60px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+} */
+
+body{
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myBtn{
+    padding: 30px;
+    background-color: indigo;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    transition: 1s;
+}
+
+.myBtn:hover{
+    /* transform: translate(-20px, 20px); */
+    /* transform: rotate(20deg); */
+
+    transform: skewX(30deg)
 }
