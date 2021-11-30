@@ -7,3 +7,16 @@
     height: 15px !important;
     border-radius: 50% !important;
 }
+
+.rounded{
+    border-radius: 10px !important;
+}
+
+.icon{
+    font-size: 20px;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius:  10px;
+    background-color: blue;
+    margin: 5px;
+}
