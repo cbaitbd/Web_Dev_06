@@ -1,0 +1,58 @@
+:root{
+    --main-color: #fcb731;
+}
+
+/* font Size */
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-25{
+    font-size: 25px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.fs-35{
+    font-size: 35px;
+}
+
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-60{
+    font-size: 60px;
+}
+
+.text-black{
+    color: black;
+}
+
+.btn-con{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.btn-con:hover{
+    background-color: #000;
+    color: var(--main-color);
+}
