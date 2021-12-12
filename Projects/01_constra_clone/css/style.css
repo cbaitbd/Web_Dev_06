@@ -270,3 +270,29 @@ html, body{
 .content > h4:hover{
     color: var(--main-color);
 }
+
+.newslater{
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+
+.newslater .left{
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.newslater .right{
+    background-color: #333;
+    position: relative;
+}
+
+.newslater .right::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: inherit;
+    top: 0;
+    left: 99%;
+}
