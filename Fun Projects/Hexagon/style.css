@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #537;
+}
+
+/* .hexagon{
+    width: 200px;
+    height: 200px;
+    background-color: darkorange;
+    position: relative;
+    border-radius: 85px;
+}
+
+.hexagon::before, .hexagon::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 130px;
+    height: 130px;
+    background-color: inherit;
+    transform: rotate(45deg) translateX(-53%);
+    left: 42%;
+    border-radius: 40px;
+}
+
+.hexagon::before{
+    top: 27px;
+}
+
+.hexagon::after{
+    bottom: -73px;
+} */
+
+.quote{
+    width: 250px;
+    height: 150px;
+    background-color: #eee;
+    border: 8px solid darkorange;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(170, 170, 170, 0.3);
+}
+
+.quote::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-bottom: 8px solid darkorange;
+    border-right: 8px solid darkorange;
+    background-color: inherit;
+    top: calc(100% + 6px);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
