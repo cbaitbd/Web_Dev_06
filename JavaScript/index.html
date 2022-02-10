@@ -6,28 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #output{
+        /* #output{
             width: 200px;
             height: 200px;
             background-color: red;
+        } */
+
+        #outer{
+            position: relative;
+            width: 360px;
+            height: 360px;
+            background-color: seagreen;
+        }
+
+        #inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            z-index: 3;
+        }
+
+        #food{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(240, 196, 76);
         }
     </style>
 </head>
 <body>
 
-    <div id="output">
+    <!-- <div id="output">
         
-    </div>
+    </div> -->
 
     <!-- <button onclick="changeColor('black')">Black</button>
 
     <input type="color" onchange="inpColor(this)"> -->
-
+<!-- 
     <label for="red">Red : </label> <input min="0" max="255" type="range" oninput="inpColor(1, this)" onchange="inpColor(1, this)"> <br>
     <label for="green">Green : </label> <input min="0" max="255" type="range"oninput="inpColor(2, this)" onchange="inpColor(2, this)"> <br>
     <label for="blue">Blue : </label> <input min="0" max="255" type="range" oninput="inpColor(3, this)" onchange="inpColor(3, this)">
+ -->
+ 
+    <!-- <input type="range" oninput="changeValue(this)"  onchange="changeValue(this)" style="width: 90%;"> -->
 
 
-    <script src="./class_13.js"></script>
+
+    <!-- <p id="myP">para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+    <p>para 4</p>
+    <p>para 5</p>
+    <p>para 6</p> -->
+
+    <h1>Score: <span id="score">0</span></h1>
+    <div id="outer">
+        <div id="inner">
+
+        </div>
+        <div id="food">
+
+        </div>
+    </div>
+
+    <button onclick="changeDirection(2)">Left</button>
+    <button onclick="changeDirection(1)">Right</button>
+    <button onclick="changeDirection(4)">Up</button>
+    <button onclick="changeDirection(3)">Down</button>
+   
+
+    <script src="./class_14.js"></script>
 </body>
 </html>
