@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #output{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- <button onclick="func2(this)">click Me</button> -->
-    
+    <div id="output">
+        
+    </div>
 
-    <script src="./class_11.js"></script>
+    <!-- <button onclick="changeColor('black')">Black</button>
+
+    <input type="color" onchange="inpColor(this)"> -->
+
+    <label for="red">Red : </label> <input min="0" max="255" type="range" oninput="inpColor(1, this)" onchange="inpColor(1, this)"> <br>
+    <label for="green">Green : </label> <input min="0" max="255" type="range"oninput="inpColor(2, this)" onchange="inpColor(2, this)"> <br>
+    <label for="blue">Blue : </label> <input min="0" max="255" type="range" oninput="inpColor(3, this)" onchange="inpColor(3, this)">
+
+
+    <script src="./class_13.js"></script>
 </body>
 </html>
