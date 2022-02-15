@@ -39,6 +39,53 @@
             border-radius: 50%;
             background-color: rgb(240, 196, 76);
         }
+
+        .gamePanel{
+            display: flex;
+        }
+        .controls{
+            display: flex;
+            height: 360px;
+            width: 360px;
+            justify-content: center;
+            align-items: center;
+        }
+        .btns{
+            position: relative;
+        }
+
+        .btns button{
+            position: absolute;
+            border: none;
+            background-color: green;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 3rem;
+            font-weight: bolder;
+            height: 80px;
+            width: 80px;
+            cursor: pointer;
+        }
+        .btns button:last-child{
+            font-size: 2.5rem;
+        }
+
+        .btns button:nth-child(1){
+            top: 0;
+            right:  calc(100% + 10px);
+        }
+        .btns button:nth-child(2){
+            top: 0;
+            left: 90px;
+        }
+        .btns button:nth-child(3){
+            bottom: 10px;
+            left: 0;
+        }
+        .btns button:nth-child(4){
+            top: 90px;
+            left: 0;
+        }
     </style>
 </head>
 <body>
@@ -68,21 +115,27 @@
     <p>para 6</p> -->
 
     <h1>Score: <span id="score">0</span></h1>
-    <div id="outer">
-        <div id="inner">
-
+    <div class="gamePanel">
+        <div id="outer">
+            <div id="inner"></div>
+            <div id="food"></div>
         </div>
-        <div id="food">
-
+        <div class="controls">
+            <div class="btns">
+                <button onclick="changeDirection(2)">&larr;</button>
+                <button onclick="changeDirection(1)">&rarr;</button>
+                <button onclick="changeDirection(4)">&uarr;</button>
+                <button onclick="changeDirection(3)">&darr;</button>
+                <button id="playbtn" onclick="start(this)">&#9654;</button>
+            </div>
         </div>
+
     </div>
 
-    <button onclick="changeDirection(2)">Left</button>
-    <button onclick="changeDirection(1)">Right</button>
-    <button onclick="changeDirection(4)">Up</button>
-    <button onclick="changeDirection(3)">Down</button>
+
+    
    
 
-    <script src="./class_14.js"></script>
+    <script src="./class_15.js"></script>
 </body>
 </html>
