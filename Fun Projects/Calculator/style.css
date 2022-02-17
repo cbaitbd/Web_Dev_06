@@ -43,4 +43,9 @@ body{
     color: #fff;
     border: none;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(219, 219, 219, 0.13);
 }
