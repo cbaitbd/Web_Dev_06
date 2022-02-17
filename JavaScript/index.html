@@ -5,88 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* #output{
-            width: 200px;
-            height: 200px;
-            background-color: red;
-        } */
-
-        #outer{
-            position: relative;
-            width: 360px;
-            height: 360px;
-            background-color: seagreen;
-        }
-
-        #inner{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: white;
-            z-index: 3;
-        }
-
-        #food{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: rgb(240, 196, 76);
-        }
-
-        .gamePanel{
-            display: flex;
-        }
-        .controls{
-            display: flex;
-            height: 360px;
-            width: 360px;
-            justify-content: center;
-            align-items: center;
-        }
-        .btns{
-            position: relative;
-        }
-
-        .btns button{
-            position: absolute;
-            border: none;
-            background-color: green;
-            color: #fff;
-            border-radius: 50%;
-            font-size: 3rem;
-            font-weight: bolder;
-            height: 80px;
-            width: 80px;
-            cursor: pointer;
-        }
-        .btns button:last-child{
-            font-size: 2.5rem;
-        }
-
-        .btns button:nth-child(1){
-            top: 0;
-            right:  calc(100% + 10px);
-        }
-        .btns button:nth-child(2){
-            top: 0;
-            left: 90px;
-        }
-        .btns button:nth-child(3){
-            bottom: 10px;
-            left: 0;
-        }
-        .btns button:nth-child(4){
-            top: 90px;
-            left: 0;
-        }
-    </style>
+   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -114,7 +33,7 @@
     <p>para 5</p>
     <p>para 6</p> -->
 
-    <h1>Score: <span id="score">0</span></h1>
+    <!-- <h1>Score: <span id="score">0</span></h1>
     <div class="gamePanel">
         <div id="outer">
             <div id="inner"></div>
@@ -128,14 +47,18 @@
                 <button onclick="changeDirection(3)">&darr;</button>
                 <button id="playbtn" onclick="start(this)">&#9654;</button>
             </div>
-        </div>
+        </div> -->
 
-    </div>
+    <!-- </div> -->
+
+    <!-- <div class="parent">
+        <div class="point"></div>
+    </div> -->
 
 
     
    
 
-    <script src="./class_15.js"></script>
+    <script src="./class_16.js"></script>
 </body>
 </html>

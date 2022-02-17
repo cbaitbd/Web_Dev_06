@@ -94,7 +94,7 @@ function start(elm){
         elm.innerHTML = '&#9654;' // Play Symbol
     }
 }
-printFood()
+printFood();
 
 
 window.addEventListener('keydown', function(event){
