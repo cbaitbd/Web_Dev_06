@@ -107,3 +107,7 @@ body{
     cursor: pointer;
 }
 
+#audioSource{
+    display: none;
+}
+
