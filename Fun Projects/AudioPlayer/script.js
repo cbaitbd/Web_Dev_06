@@ -6,10 +6,43 @@ window.onload = () => {
     let durationField =  document.querySelector('.total');
     let currentField =  document.querySelector('.current');
     let liner = document.querySelector('.liner');
+    let progress = document.querySelector('.progress');
+    let nextBtn = document.querySelector('#nextBtn');
+    let prevBtn = document.querySelector('#prevBtn');
     
     // console.dir(audioSource);
     let musicPlaying = null;
+    let playNumber = 1;
 
+    const palyNext = () => {
+
+        playNumber === 4 ? playNumber = 0 : null;
+
+        playNumber += 1;
+        if(!audioSource.paused){
+            audioSource.pause();
+        }
+
+        audioSource.src = `./musics/0${playNumber}.mp3`;
+        audioSource.currentTime = 0;
+
+        playBtn.click();
+
+    }
+
+    const palyPrev = () => {
+        playNumber === 1 ? playNumber = 5 : null;
+
+        playNumber -= 1;
+        if(!audioSource.paused){
+            audioSource.pause();
+        }
+
+        audioSource.src = `./musics/0${playNumber}.mp3`;
+        audioSource.currentTime = 0;
+
+        playBtn.click();
+    }
 
     const getTime = time => {
         let hour = Math.floor(time / ( 60 * 60))
@@ -62,16 +95,50 @@ window.onload = () => {
     //     console.log(e);
     // })
 
-    window.addEventListener('keypress', e => {
-        console.log(e.key);
-        if(e.key === ' '){
-            playBtn.click();
-        }
+    progress.addEventListener('click', (e) => {
+        let offsetX = e.offsetX;
+        let totaltime = audioSource.duration;
+        let parcent = offsetX / 180;
+        let currentTime = totaltime * parcent;
+
+        audioSource.currentTime = currentTime;
+ 
+        liner.style.width = offsetX + 'px';
     })
 
-    
+    nextBtn.addEventListener('click', palyNext)
+    prevBtn.addEventListener('click', palyPrev)
+
+    window.addEventListener('keydown', e => {
+        
+        if(e.key == ' '){
+            playBtn.click();
+        }
+        
+        if(e.key == 'ArrowRight'){
+            nextBtn.click();
+        }
+        
+        if(e.key == 'ArrowLeft'){
+            prevBtn.click();
+        }
+           
+    })
 }
 
+const mutag = window.mutag;
+
+fetch('./musics/01.mp3').then(res => {
+    console.log(res);
+})
 
 
 
+
+
+// 355 sec
+//  180 px
+// 90px;
+
+// 90 / 180 * 100 = 50% -> .5
+// 355 * .5 => 175
