@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
 
-   <style>
-       #nameOutput{
-           position: relative;
-       }
-       .anim{
-           transform: translateX(-200px);
-           opacity: 0;
-       }
-   </style>
-</head>
-<body>
-
+    <style>
+      #nameOutput {
+        position: relative;
+      }
+      .anim {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
     <!-- <div id="output">
         
     </div> -->
@@ -26,15 +25,13 @@
     <!-- <button onclick="changeColor('black')">Black</button>
 
     <input type="color" onchange="inpColor(this)"> -->
-<!-- 
+    <!-- 
     <label for="red">Red : </label> <input min="0" max="255" type="range" oninput="inpColor(1, this)" onchange="inpColor(1, this)"> <br>
     <label for="green">Green : </label> <input min="0" max="255" type="range"oninput="inpColor(2, this)" onchange="inpColor(2, this)"> <br>
     <label for="blue">Blue : </label> <input min="0" max="255" type="range" oninput="inpColor(3, this)" onchange="inpColor(3, this)">
  -->
- 
+
     <!-- <input type="range" oninput="changeValue(this)"  onchange="changeValue(this)" style="width: 90%;"> -->
-
-
 
     <!-- <p id="myP">para 1</p>
     <p>para 2</p>
@@ -93,14 +90,44 @@
         </p>
     </div> -->
 
-    <button id="btn">Load Posts</button>
+    <!-- <button id="btn">Load Posts</button>
 
-    <ul id="output"></ul>
-    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <ul id="output"></ul> -->
 
-    <script src="./class_23.js"></script>
+    <!-- <input type="text" id="input">
+    <ul id="keywordsField">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>NodeJs</li>
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>React</li>
+        <li>MySql</li>
+        <li>OOP</li>
+        <li>UX/UI</li>
+    </ul> -->
 
+    <img width="30%" src="./hen.jpg" id="output" />
+    <input type="file" id="imageField" />
+    <script>
+        const output = document.querySelector('#output');
+        const field = document.querySelector('#imageField');
 
-</body>
+        field.addEventListener('change', function() {
+            const imageFile = this.files[0];
+            const reader = new FileReader();
+
+            reader.onload = () => {
+                output.src = reader.result;
+            }
+
+            reader.readAsDataURL(imageFile);
+
+        })
+      
+    </script>
+  </body>
 </html>
